@@ -1,0 +1,7 @@
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\bin\Debug\Week1_TristanKnott.exe.config
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\bin\Debug\Week1_TristanKnott.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\bin\Debug\Week1_TristanKnott.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\obj\Debug\Week1_TristanKnott.csproj.AssemblyReference.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\obj\Debug\Week1_TristanKnott.csproj.CoreCompileInputs.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\obj\Debug\Week1_TristanKnott.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\C#\SE245-C-\Week 1\Week1_TristanKnott\obj\Debug\Week1_TristanKnott.pdb
