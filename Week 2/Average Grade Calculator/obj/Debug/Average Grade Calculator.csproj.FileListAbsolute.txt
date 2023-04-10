@@ -1,0 +1,7 @@
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\bin\Debug\Average Grade Calculator.exe.config
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\bin\Debug\Average Grade Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\bin\Debug\Average Grade Calculator.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\obj\Debug\Average Grade Calculator.csproj.AssemblyReference.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\obj\Debug\Average Grade Calculator.csproj.CoreCompileInputs.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\obj\Debug\Average Grade Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Average Grade Calculator\obj\Debug\Average Grade Calculator.pdb

@@ -1,0 +1,32 @@
+using System;
+
+namespace AveragerProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int count;
+            double num, total = 0;
+
+            Console.WriteLine("How many numbers do you want to average?");
+            count = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter numbers to calculate the average:");
+            for (int i = 0; i < count; i++)
+            {
+                while (!double.TryParse(Console.ReadLine(), out num))
+                {
+                    Console.WriteLine("Please enter a valid number:");
+                }
+                total += num;
+            }
+
+            double average = total / count;
+            Console.WriteLine($"The average is: {average}");
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+    }
+}
