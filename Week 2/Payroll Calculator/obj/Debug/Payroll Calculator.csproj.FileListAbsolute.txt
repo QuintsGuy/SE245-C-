@@ -1,0 +1,8 @@
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\bin\Debug\Payroll Calculator.exe.config
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\bin\Debug\Payroll Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\bin\Debug\Payroll Calculator.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.AssemblyReference.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.CoreCompileInputs.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\obj\Debug\Payroll Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C-\Week 2\Payroll Calculator\obj\Debug\Payroll Calculator.pdb
