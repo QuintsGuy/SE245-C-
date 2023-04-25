@@ -5,3 +5,10 @@ C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\We
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Payroll Calculator\bin\Debug\Payroll_Calculator.pdb
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Payroll Calculator\obj\Debug\Payroll_Calculator.exe
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Payroll Calculator\obj\Debug\Payroll_Calculator.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.AssemblyReference.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\obj\Debug\Payroll Calculator.csproj.CoreCompileInputs.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\obj\Debug\Payroll_Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\obj\Debug\Payroll_Calculator.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\bin\Debug\Payroll_Calculator.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 4\Payroll Calculator\bin\Debug\Payroll_Calculator.pdb

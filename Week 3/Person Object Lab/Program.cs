@@ -10,16 +10,29 @@ namespace Person_Object_Lab
     {
         public class Person
         {
-            public string FName;
-            public string MName;
-            public string LName;
-            public string Street1;
-            public string Street2;
-            public string City;
-            public string State;
-            public string ZipCode;
-            public string Phone;
-            public string Email;
+            private string fname;
+            private string mname;
+            public string lname;
+            public string street1;
+            public string street2;
+            public string city;
+            public string state;
+            public string zipcode;
+            public string phone;
+            public string email;
+
+            public string FName
+            {
+                get
+                {
+                    return fname;
+                }
+                set
+                {
+                    
+                }
+                
+            }
         }
         public static void Main(string[] args)
         {
