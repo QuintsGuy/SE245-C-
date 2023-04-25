@@ -1,0 +1,14 @@
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\bin\Debug\Person_Object_Lab.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\bin\Debug\Person_Object_Lab.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.AssemblyReference.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.SuggestedBindingRedirects.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.CoreCompileInputs.cache
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person_Object_Lab.exe
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person_Object_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\bin\Debug\Person_Object_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\bin\Debug\Person_Object_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.AssemblyReference.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person Object Lab.csproj.CoreCompileInputs.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person_Object_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 3\Person Object Lab\obj\Debug\Person_Object_Lab.pdb
