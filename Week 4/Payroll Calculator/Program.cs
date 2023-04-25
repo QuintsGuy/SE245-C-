@@ -89,7 +89,7 @@ namespace Payroll_Calculator
             } while (runProgram == "y");
         }
         
-        static double AverageNetPay(List<string> names, List<double> netPay)
+        static double AverageNetPay(List<string> names, ref List<double> netPay)
         {
             double totalPay = 0;
             for (int i = 0; i < names.Count; i++)
@@ -113,7 +113,7 @@ namespace Payroll_Calculator
                     names[i], hours[i], rates[i], grossPay[i], taxes[i], netPay[i]);
             }
 
-            Console.WriteLine($"\nThe total average pay for all employee's is ${AverageNetPay(names, netPay)}");
+            Console.WriteLine($"\nThe total average pay for all employee's is ${AverageNetPay(names, ref netPay)}");
         }
         static string RunProgramAgain()
         {
