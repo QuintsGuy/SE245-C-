@@ -8,37 +8,141 @@ namespace Person_Object_Lab
 {
     internal class Program
     {
-        public class Person
+        // Defining a class named Person which is private
+        private class Person
         {
-            private string fname;
-            private string mname;
-            public string lname;
-            public string street1;
-            public string street2;
-            public string city;
-            public string state;
-            public string zipcode;
-            public string phone;
-            public string email;
+            // Declaring private instance variables for the class Person
+            private string _fname;
+            private string _mname;
+            private string _lname;
+            private string _street1;
+            private string _street2;
+            private string _city;
+            private string _state;
+            private string _zipcode;
+            private string _phone;
+            private string _email;
 
+            // Defining public properties to access and modify the private instance variables of the class
             public string FName
             {
                 get
                 {
-                    return fname;
+                    return _fname;
                 }
                 set
                 {
-                    
+                    _fname = value;
                 }
-                
+            }
+            public string MName
+            {
+                get
+                {
+                    return _mname;
+                }
+                set
+                {
+                    _mname = value;
+                }
+            }
+            public string LName
+            {
+                get
+                {
+                    return _lname;
+                }
+                set
+                {
+                    _lname = value;
+                }
+            }
+            public string Street1
+            {
+                get
+                {
+                    return _street1;
+                }
+                set
+                {
+                    _street1 = value;
+                }
+            }
+            public string Street2
+            {
+                get
+                {
+                    return _street2;
+                }
+                set
+                {
+                    _street2 = value;
+                }
+            }
+            public string City
+            {
+                get
+                {
+                    return _city;
+                }
+                set
+                {
+                    _city = value;
+                }
+            }
+            public string State
+            {
+                get
+                {
+                    return _state;
+                }
+                set
+                {
+                    _state = value;
+                }
+            }
+            public string ZipCode
+            {
+                get
+                {
+                    return _zipcode;
+                }
+                set
+                {
+                    _zipcode = value;
+                }
+            }
+            public string Phone
+            {
+                get
+                {
+                    return _phone;
+                }
+                set
+                {
+                    _phone = value;
+                }
+            }
+            public string Email
+            {
+                get
+                {
+                    return _email;
+                }
+                set
+                {
+                    _email = value;
+                }
             }
         }
         public static void Main(string[] args)
         {
             bool blnResult = false;
+            
+            // Creating an object of class Person named user
             Person user = new Person();
 
+            // Reading the user's inputs and storing them in the corresponding property of the object user
             Console.Write("\nPlease enter your first name: ");
             user.FName = Console.ReadLine();
             
