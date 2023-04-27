@@ -16,7 +16,6 @@ namespace Personal_Information_Form
         {
             InitializeComponent();
         }
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             Person temp = new Person();
@@ -31,6 +30,32 @@ namespace Personal_Information_Form
             temp.ZipCode = txtZipcode.Text;
             temp.Phone = txtPhone.Text;
             temp.Email = txtEmail.Text;
+            
+            if(temp.Feedback.Contains("ERROR")==false)
+            {
+                lblFeedback.Text = temp.FName + " " + temp.MName + " "+ temp.LName + "\n" 
+                                   + temp.Street1 + ", " + temp.Street2 + ", " + temp.City + 
+                                   ", " + temp.State + " " + temp.ZipCode + "\n" + temp.Phone + 
+                                   "\n" + temp.Email;
+            }
+            else
+            {
+                lblFeedback.Text = temp.Feedback;
+            }
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtFirstName.Clear();
+            txtMiddleInitial.Clear();
+            txtLastName.Clear();
+            txtStreet1.Clear();
+            txtStreet2.Clear();
+            txtCity.Clear();
+            txtState.Clear();
+            txtZipcode.Clear();
+            txtPhone.Clear();
+            txtEmail.Clear();
+            lblFeedback.Text = "Feedback";
         }
     }
 }

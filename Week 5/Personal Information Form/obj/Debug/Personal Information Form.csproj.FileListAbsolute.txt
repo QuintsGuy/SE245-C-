@@ -10,3 +10,12 @@ C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Per
 C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.pdb
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.exe
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal Information Form.csproj.AssemblyReference.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal Information Form.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.Form1.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.Properties.Resources.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal Information Form.csproj.GenerateResource.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal Information Form.csproj.CoreCompileInputs.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.exe.config
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.pdb
