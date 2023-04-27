@@ -24,13 +24,27 @@ namespace Form_Demo
 
         private void addBook_Click(object sender, EventArgs e)
         {
-            if (txtTitle.Text.ToLower().Contains("homework") == false)
+            //Create a new instance of a book
+            Book temp = new Book();
+            
+            //****************************************************************
+            //Fiil in book
+
+            temp.Title = txtTitle.Text;
+            temp.AuthorEmail = txtAuthorEmail.Text;
+            temp.Price = Double.Parse(txtPrice.Text);
+            temp.PubDate = dptPubDate.Value;
+
+            //*****************************************************************
+            //If the book has no errors, display the book in feedback label
+            if (temp.Feedback.Contains("ERROR") == false)
             {
-                lblFeedback.Text = "The book you added is " + txtTitle.Text;
+                lblFeedback.Text = temp.Title + "\n" + temp.AuthorEmail + "\n" + temp.PubDate.ToLongDateString();
             }
+            //Else display error message within feedback label
             else
             {
-                lblFeedback.Text = "Error: You cannot use bad words in your book title";
+                lblFeedback.Text = temp.Feedback;
             }
         }
     }
