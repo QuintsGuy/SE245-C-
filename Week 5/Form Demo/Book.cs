@@ -30,7 +30,7 @@ namespace Form_Demo
                 if (Validation.GotBadWords(value))
                 {
                     //do not set title and display nasty message
-                    Feedback += "\nERROR: You have poop in your title";
+                    Feedback += "\nERROR: You cannot have bad words in your title";
                 }
                 
                 else if (Validation.IsItFilledIn(value, 2) == false)
@@ -48,13 +48,46 @@ namespace Form_Demo
         public string AuthorFirstName
         {
             get { return authorFirstName; }
-            set { authorFirstName = value; }
+            set 
+            { 
+                if (Validation.GotBadWords(value))
+                {
+                    //do not set title and display nasty message
+                    Feedback += "\nERROR: You cannot have bad words in author's first name."; 
+                }
+            
+                else if (Validation.IsItFilledIn(value, 2) == false)
+                {
+                    Feedback += "\nERROR: You need at least 2 characters as author's first name.";
+                }
+                
+                else
+                {
+                    authorFirstName = value;
+                } 
+            }
         }
 
         public string AuthorLastName
         {
             get { return authorLastName; }
-            set { authorLastName = value; }
+            set { 
+                if (Validation.GotBadWords(value))
+                {
+                    //do not set title and display nasty message
+                    Feedback += "\nERROR: You cannot have bad words in author's last name."; 
+                }
+            
+                else if (Validation.IsItFilledIn(value, 2) == false)
+                {
+                    Feedback += "\nERROR: You need at least 2 characters as author's last name.";
+                }
+                
+                else
+                {
+                    authorLastName = value;
+                } 
+            }
         }
 
         public string AuthorEmail
@@ -62,17 +95,16 @@ namespace Form_Demo
             get { return authorEmail; }
             set
             {
-                if (Validation.GotBadWords(value))
+                if (Validation.IsValidEmail(value) == false)
                 {
                     //do not set title and display nasty message
-                    Feedback += "\nERROR: You have poop in your title";
+                    Feedback += "\nERROR: The email entered is not valid";
                 }
                 
                 else if (Validation.IsItFilledIn(value, 8) == false)
                 {
-                    Feedback += "\nERROR: You need at least 2 characters in your title";
+                    Feedback += "\nERROR: You need at least 2 characters in the author's email";
                 }
-                
                 else
                 {
                     authorEmail = value;
@@ -83,19 +115,57 @@ namespace Form_Demo
         public double Price
         {
             get { return price; }
-            set { price = value; }
+            set
+            {
+                if (Validation.IsMinimumAmount(value, 5))
+                {
+                    Feedback += "\nERROR: The book must be at least $5";
+                }
+                else if (Validation.IsADouble(value.ToString())==false)
+                {
+                    Feedback += "\nERROR: Price input is not an integer";
+                }
+                else
+                {
+                    price = value;
+                }
+            }
         }
 
         public int Pages
         {
             get { return pages; }
-            set { pages = value; }
+            set 
+            {
+                if (Validation.IsMinimumAmount(value, 25))
+                {
+                    Feedback += "\nERROR: The book must be at least $5";
+                }
+                else if (Validation.IsADouble(value.ToString())==false)
+                {
+                    Feedback += "\nERROR: Page input is not an integer";
+                }
+                else
+                {
+                    pages = value;
+                }
+            }
         }
 
         public DateTime PubDate
         {
             get { return pubDate; }
-            set { pubDate = value; }
+            set
+            {
+                if (Validation.IsAFutureDate(value))
+                {
+                    Feedback += "\nERROR: The date entered is in the future";
+                }
+                else
+                {
+                    pubDate = value;
+                }
+            }
         }
 
         public string Feedback

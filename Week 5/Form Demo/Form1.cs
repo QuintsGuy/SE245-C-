@@ -25,27 +25,54 @@ namespace Form_Demo
         private void addBook_Click(object sender, EventArgs e)
         {
             //Create a new instance of a book
-            Book temp = new Book();
+            EBook temp = new EBook();
             
             //****************************************************************
             //Fiil in book
 
             temp.Title = txtTitle.Text;
+            temp.AuthorFirstName = txtAuthorFirstName.Text;
+            temp.AuthorLastName = txtAuthorLastName.Text;
             temp.AuthorEmail = txtAuthorEmail.Text;
             temp.Price = Double.Parse(txtPrice.Text);
             temp.PubDate = dptPubDate.Value;
+            temp.Pages = Int32.Parse(txtPages.Text);
+            temp.BookmarkPage = Int32.Parse(txtBookmark.Text);
+            temp.DateRentalExpires = dtpRentalExpiration.Value;
 
             //*****************************************************************
             //If the book has no errors, display the book in feedback label
             if (temp.Feedback.Contains("ERROR") == false)
             {
-                lblFeedback.Text = temp.Title + "\n" + temp.AuthorEmail + "\n" + temp.PubDate.ToLongDateString();
+                lblFeedback.Text = "Title: " + temp.Title + "\n" + "Author Name: " + temp.AuthorFirstName + temp.AuthorLastName + 
+                                   "\n" + "Author Email: " + temp.AuthorEmail + "\n" + "Pages: " + temp.Pages +"\n" + "Book Price: " + temp.Price + "\n" + 
+                                   "Publication Date: " + temp.PubDate.ToLongDateString() + "\n" + "Bookmarked Page: " + temp.BookmarkPage + "\n" + 
+                                   "Rental Expiration: " + temp.DateRentalExpires.ToLongDateString();
             }
             //Else display error message within feedback label
             else
             {
                 lblFeedback.Text = temp.Feedback;
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtTitle.Clear();
+            txtAuthorFirstName.Clear();
+            txtAuthorLastName.Clear();
+            txtAuthorEmail.Clear();
+            txtPrice.Clear();
+            txtPages.Clear();
+            txtBookmark.Clear();
+            lblFeedback.Text = "Feedback";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //throw new System.NotImplementedException();
+            
+            dtpRentalExpiration.Value = DateTime.Now.AddDays(14);
         }
     }
 }

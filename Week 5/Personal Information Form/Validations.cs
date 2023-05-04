@@ -22,7 +22,7 @@ namespace Personal_Information_Form
             bool result = temp.Length == value;
             return result;
         }
-        public static bool IsItInteger(string temp)
+        public static bool IsItInteger(double temp)
         {
             int intResult;
             bool blnresult = int.TryParse(temp, out intResult);

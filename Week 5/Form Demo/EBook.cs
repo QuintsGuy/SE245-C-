@@ -35,7 +35,7 @@ namespace Form_Demo
                 }
                 else
                 {
-                    feedback += "\nERROR: Sorry you entered an invalid bookmark page #.";
+                    Feedback += "\nERROR: Sorry you entered an invalid bookmark page #.";
                 }
             }
         }

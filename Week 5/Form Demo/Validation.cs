@@ -12,8 +12,8 @@ namespace Form_Demo
         {
             bool blnResult = false;
 
-            string[] strBadWords = { "Fuck", "Shit", "Crap", "Bitch" };
-            
+            string[] strBadWords = { "fuck", "shit", "crap", "bitch" };
+
             foreach (string strBW in strBadWords)
                 if (temp.ToLower().Contains(strBW))
                 {
@@ -32,7 +32,7 @@ namespace Form_Demo
 
         public static bool IsAFutureDate(DateTime temp)
         {
-            bool blnResult = temp <= DateTime.Now;
+            bool blnResult = temp > DateTime.Now;
 
             return blnResult;
         }
@@ -42,7 +42,7 @@ namespace Form_Demo
             bool blnResult = true;
 
             int atLocation = temp.IndexOf("@");
-            int nextAtLocation = temp.IndexOf("@", atLocation+1);
+            int nextAtLocation = temp.IndexOf("@", atLocation + 1);
 
             int periodLocation = temp.LastIndexOf(".");
 
@@ -58,18 +58,29 @@ namespace Form_Demo
             {
                 blnResult = false;
             }
-
+            else if (nextAtLocation > atLocation)
+            {
+                blnResult = false;
+            }
+            
             return blnResult;
         }
 
         public static bool IsMinimumAmount(double temp, double min)
         {
-            bool blnResult = temp >= min;
+            bool blnResult = temp < min;
 
             return blnResult;
         }
-        
-        
-        
+
+        public static bool IsADouble(string temp)
+        {
+            double intResult;
+            bool blnResult = double.TryParse(temp, out intResult);
+            return blnResult;
+        }
+
+
+
     }
 }

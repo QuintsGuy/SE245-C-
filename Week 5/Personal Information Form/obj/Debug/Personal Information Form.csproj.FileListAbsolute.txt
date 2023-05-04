@@ -19,3 +19,4 @@ C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\We
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.exe.config
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.exe
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\bin\Debug\Personal_Information_Form.pdb
+C:\Users\knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 5\Personal Information Form\obj\Debug\Personal_Information_Form.Form1.resources
