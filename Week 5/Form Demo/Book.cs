@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Form_Demo
 {
-    class Book
+    public class Book
     {
         private string title;
         private string authorFirstName;
@@ -15,7 +15,7 @@ namespace Form_Demo
         private double price;
         private int pages;
         private DateTime pubDate;
-        private string feedback;
+        public string feedback;
 
         public Book()
         {
@@ -27,7 +27,7 @@ namespace Form_Demo
             get { return title;  }
             set
             {
-                if (Validation.GotPoop(value))
+                if (Validation.GotBadWords(value))
                 {
                     //do not set title and display nasty message
                     Feedback += "\nERROR: You have poop in your title";
@@ -62,7 +62,7 @@ namespace Form_Demo
             get { return authorEmail; }
             set
             {
-                if (Validation.GotPoop(value))
+                if (Validation.GotBadWords(value))
                 {
                     //do not set title and display nasty message
                     Feedback += "\nERROR: You have poop in your title";

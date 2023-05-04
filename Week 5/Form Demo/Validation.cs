@@ -8,29 +8,68 @@ namespace Form_Demo
 {
     public class Validation
     {
-        public static bool GotPoop(string temp)
+        public static bool GotBadWords(string temp)
         {
-            bool result = false;
-            if (temp.ToLower().Contains("poop"))
-            {
-                result = true;
-            }
+            bool blnResult = false;
 
-            return result;
+            string[] strBadWords = { "Fuck", "Shit", "Crap", "Bitch" };
+            
+            foreach (string strBW in strBadWords)
+                if (temp.ToLower().Contains(strBW))
+                {
+                    blnResult = true;
+                }
+
+            return blnResult;
         }
 
         public static bool IsItFilledIn(string temp, int minlen)
         {
-            bool result = false;
-            if (temp.Length >= minlen)
+            bool blnResult = temp.Length >= minlen;
+
+            return blnResult;
+        }
+
+        public static bool IsAFutureDate(DateTime temp)
+        {
+            bool blnResult = temp <= DateTime.Now;
+
+            return blnResult;
+        }
+
+        public static bool IsValidEmail(string temp)
+        {
+            bool blnResult = true;
+
+            int atLocation = temp.IndexOf("@");
+            int nextAtLocation = temp.IndexOf("@", atLocation+1);
+
+            int periodLocation = temp.LastIndexOf(".");
+
+            if (temp.Length < 8)
             {
-                result = true;
+                blnResult = false;
+            }
+            else if (atLocation < 2)
+            {
+                blnResult = false;
+            }
+            else if (periodLocation + 2 > (temp.Length))
+            {
+                blnResult = false;
             }
 
-            return result;
+            return blnResult;
+        }
+
+        public static bool IsMinimumAmount(double temp, double min)
+        {
+            bool blnResult = temp >= min;
+
+            return blnResult;
         }
         
-        //public static bool IsAFutureDate(DateTime temp)
-        // { bool blnResult; }
+        
+        
     }
 }
