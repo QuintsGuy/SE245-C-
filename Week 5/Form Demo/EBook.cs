@@ -19,7 +19,7 @@ namespace Form_Demo
                 }
                 else
                 {
-                    feedback += "\nERROR: You must enter future dates";
+                    Feedback += "\nERROR: You must enter future dates";
                 }
             }
         }
