@@ -1,0 +1,11 @@
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\bin\Debug\PersonV2_Lab.exe.config
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\bin\Debug\PersonV2_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\bin\Debug\PersonV2_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2 Lab.csproj.AssemblyReference.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2 Lab.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.Properties.Resources.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2 Lab.csproj.GenerateResource.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2 Lab.csproj.CoreCompileInputs.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.Form1.resources

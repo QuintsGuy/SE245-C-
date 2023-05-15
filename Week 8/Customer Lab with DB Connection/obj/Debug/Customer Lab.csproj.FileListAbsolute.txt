@@ -1,0 +1,22 @@
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\bin\Debug\Customer_Lab.exe.config
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\bin\Debug\Customer_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\bin\Debug\Customer_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer Lab.csproj.AssemblyReference.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer Lab.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer_Lab.Properties.Resources.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer Lab.csproj.GenerateResource.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer Lab.csproj.CoreCompileInputs.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\Customer Lab\obj\Debug\Customer_Lab.Form1.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\bin\Debug\Customer_Lab.exe.config
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\bin\Debug\Customer_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\bin\Debug\Customer_Lab.pdb
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer Lab.csproj.AssemblyReference.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer Lab.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer_Lab.Form1.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer_Lab.Properties.Resources.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer Lab.csproj.GenerateResource.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer Lab.csproj.CoreCompileInputs.cache
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer_Lab.exe
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 8\Customer Lab with DB Connection\obj\Debug\Customer_Lab.pdb
