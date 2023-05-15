@@ -1,4 +1,14 @@
-namespace Personal_Information_Form
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PersonV2_Lab
 {
     public class Validations
     {
@@ -22,11 +32,16 @@ namespace Personal_Information_Form
             bool result = temp.Length == value;
             return result;
         }
-        public static bool IsItInteger(string temp)
+        public static bool IsADouble(string temp)
         {
-            int intResult;
-            bool blnresult = int.TryParse(temp, out intResult);
-            return blnresult;
+            double intResult;
+            bool blnResult = double.TryParse(temp, out intResult);
+            return blnResult;
+        }
+
+        public static bool ValidInstagramURL(string temp)
+        {
+            return temp.ToLower().StartsWith("https://www.instagram.com");
         }
     }
 }
