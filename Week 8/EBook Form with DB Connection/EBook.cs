@@ -52,9 +52,9 @@ namespace Form_Demo
 
         //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
         
-        private SqlConnection GetConnected()
+        private string GetConnected()
         {
-            return new SqlConnection(@"Server=sql.neit.edu\sqlstudentserver,4500;Database=SE133_TKnott;User ID=SE133_TKnott;Password=008018683");
+            return "Server=sql.neit.edu,4500;Database=SE133_TKnott;User Id=SE133_TKnott;Password=008018683;";
         }
         
         //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,31 +62,33 @@ namespace Form_Demo
         public string AddARecord()
         {
             string strResult = "";
-            SqlConnection Conn = GetConnected();
-
-            string strSQL =
-                "INSERT INTO EBooks (Title, AuthorFirst, AuthorLast, Email, Pages, DatePublished, DateRentalExpires, BookmarkPage)" +
-                "VALUES (@Title, @AuthorFirst, @AuthorLast, @Email, @Pages, @DatePublished, @DateRentalExpires, @BookmarkPage)";
-
+            
+            SqlConnection Conn = new SqlConnection();
+            
+            Conn.ConnectionString = @GetConnected();
+            
+            string strSQL = "INSERT INTO EBooks (Title, AuthorFirst, AuthorLast, Email, Pages, DatePublished, DateRentalExpires, BookmarkPage) " +
+                            "VALUES (@Title, @AuthorFirst, @AuthorLast, @Email, @Pages, @DatePublished, @DateRentalExpires, @BookmarkPage)";
+            
             SqlCommand comm = new SqlCommand();
             comm.CommandText = strSQL;
             comm.Connection = Conn;
 
+            
             comm.Parameters.AddWithValue("@Title", Title);
             comm.Parameters.AddWithValue("@AuthorFirst", AuthorFirstName);
             comm.Parameters.AddWithValue("@AuthorLast", AuthorLastName);
             comm.Parameters.AddWithValue("@Email", AuthorEmail);
-            comm.Parameters.AddWithValue("@Price", Price);
             comm.Parameters.AddWithValue("@Pages", Pages);
             comm.Parameters.AddWithValue("@DatePublished", PubDate);
             comm.Parameters.AddWithValue("@DateRentalExpires", DateRentalExpires);
             comm.Parameters.AddWithValue("@BookmarkPage", BookmarkPage);
-
+            
             try
             {
                 Conn.Open();
                 int intRecs = comm.ExecuteNonQuery();
-                strResult = "SUCCESS: Connected to Database";
+                strResult = $"SUCCESS: Inserted {intRecs} records."; 
                 Conn.Close();
             }
             catch (Exception err)
@@ -95,9 +97,9 @@ namespace Form_Demo
             }
             finally
             {
-                
-            }
 
+            }
+            
             return strResult;
         }
         
@@ -105,33 +107,38 @@ namespace Form_Demo
 
         public DataSet SearchEBooks(string strTitle, string strAuthorLast)
         {
+            
             DataSet ds = new DataSet();
-
-            string strSQL = "SELECT EBook_ID, Title, AuthorFirst, AuthorLast FROM EBooks WHERE 0=0";
-
+            
+            SqlCommand comm = new SqlCommand();
+            
+            String strSQL = "SELECT EBook_ID, Title, AuthorFirst, AuthorLast FROM EBooks WHERE 0=0";
+            
             if (strTitle.Length > 0)
             {
                 strSQL += " AND Title LIKE @Title";
+                comm.Parameters.AddWithValue("@Title", "%" + strTitle + "%");
             }
-
             if (strAuthorLast.Length > 0)
             {
                 strSQL += " AND AuthorLast LIKE @AuthorLast";
+                comm.Parameters.AddWithValue("@AuthorLast", "%" + strAuthorLast + "%");
             }
             
-            using (SqlConnection conn = GetConnected())
-            using (SqlCommand comm = new SqlCommand(strSQL, conn))
-            {
-                if (!string.IsNullOrEmpty(strTitle))
-                    comm.Parameters.AddWithValue("@Title", "%" + strTitle + "%");
+            SqlConnection conn = new SqlConnection();
+            
+            string strConn = @GetConnected();
+            conn.ConnectionString = strConn;
+            
+            comm.Connection = conn;
+            comm.CommandText = strSQL;
+            
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = comm;
 
-                if (!string.IsNullOrEmpty(strAuthorLast))
-                    comm.Parameters.AddWithValue("@AuthorLast", "%" + strAuthorLast + "%");
-
-                SqlDataAdapter da = new SqlDataAdapter(comm);
-                conn.Open();
-                da.Fill(ds, "EBooks_Temp");
-            }             
+            conn.Open();
+            da.Fill(ds, "EBooks_Temp");
+            conn.Close();               
             
             return ds;
         }
@@ -140,13 +147,22 @@ namespace Form_Demo
         
         public SqlDataReader FindOneEBook(int intEBook_ID)
         {
-            using (SqlConnection conn = GetConnected())
-            using (SqlCommand comm = new SqlCommand("SELECT * FROM EBooks WHERE EBook_ID = @EBook_ID;", conn))
-            {
-                comm.Parameters.AddWithValue("@EBook_ID", intEBook_ID);
-                conn.Open();
-                return comm.ExecuteReader();
-            }
+            SqlConnection conn = new SqlConnection();
+            SqlCommand comm = new SqlCommand();
+            
+            string strConn = GetConnected();
+            
+            string sqlString =
+                "SELECT * FROM EBooks WHERE EBook_ID = @EBook_ID;";
+            
+            conn.ConnectionString = strConn;
+            
+            comm.Connection = conn;
+            comm.CommandText = sqlString;
+            comm.Parameters.AddWithValue("@EBook_ID", intEBook_ID);
+            
+            conn.Open();
+            return comm.ExecuteReader();
         }
         
         public EBook() : base()

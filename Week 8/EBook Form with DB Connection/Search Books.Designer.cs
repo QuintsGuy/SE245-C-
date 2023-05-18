@@ -46,14 +46,15 @@ namespace Form_Demo
             this.dgvResults.Location = new System.Drawing.Point(12, 147);
             this.dgvResults.Name = "dgvResults";
             this.dgvResults.RowTemplate.Height = 33;
-            this.dgvResults.Size = new System.Drawing.Size(776, 289);
+            this.dgvResults.Size = new System.Drawing.Size(1355, 569);
             this.dgvResults.TabIndex = 0;
+            this.dgvResults.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResults_CellDoubleClick);
             // 
             // btnSearchBooks
             // 
             this.btnSearchBooks.Location = new System.Drawing.Point(12, 90);
             this.btnSearchBooks.Name = "btnSearchBooks";
-            this.btnSearchBooks.Size = new System.Drawing.Size(776, 51);
+            this.btnSearchBooks.Size = new System.Drawing.Size(1355, 51);
             this.btnSearchBooks.TabIndex = 1;
             this.btnSearchBooks.Text = "Search Books";
             this.btnSearchBooks.UseVisualStyleBackColor = true;
@@ -71,19 +72,19 @@ namespace Form_Demo
             // 
             this.txtTitle.Location = new System.Drawing.Point(69, 32);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(320, 31);
+            this.txtTitle.Size = new System.Drawing.Size(611, 31);
             this.txtTitle.TabIndex = 3;
             // 
             // txtAuthorLast
             // 
-            this.txtAuthorLast.Location = new System.Drawing.Point(594, 32);
+            this.txtAuthorLast.Location = new System.Drawing.Point(909, 32);
             this.txtAuthorLast.Name = "txtAuthorLast";
-            this.txtAuthorLast.Size = new System.Drawing.Size(194, 31);
+            this.txtAuthorLast.Size = new System.Drawing.Size(458, 31);
             this.txtAuthorLast.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(402, 35);
+            this.label2.Location = new System.Drawing.Point(717, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(204, 36);
             this.label2.TabIndex = 4;
@@ -93,7 +94,7 @@ namespace Form_Demo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 448);
+            this.ClientSize = new System.Drawing.Size(1379, 728);
             this.Controls.Add(this.txtAuthorLast);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTitle);

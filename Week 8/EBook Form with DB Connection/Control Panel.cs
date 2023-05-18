@@ -10,6 +10,11 @@ namespace Form_Demo
             InitializeComponent();
         }
 
+        private void Control_Panel_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void btnSearchBooks_Click(object sender, EventArgs e)
         {
             Search_Books temp = new Search_Books();

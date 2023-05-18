@@ -19,5 +19,14 @@ namespace Form_Demo
             dgvResults.DataSource = ds;
             dgvResults.DataMember = ds.Tables["EBooks_Temp"].ToString();
         }
+
+        private void dgvResults_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string strEBook_ID = dgvResults.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            int intEBook_ID = Convert.ToInt32(strEBook_ID);
+            Form1 Editor = new Form1(intEBook_ID);
+            Editor.ShowDialog();
+        }
     }
 }

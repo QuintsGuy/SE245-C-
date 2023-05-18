@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,31 @@ namespace Form_Demo
             InitializeComponent();
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
+        /// <summary>
+        /// NEW - Constructor that Receives an EBook ID....this means we need to look up the data and populate fields (View/Edit/Del)
+        /// </summary>
+        /// <param name="intEBook_ID"></param>
+        public Form1(int intEBook_ID)
         {
-            MessageBox.Show("This is the area you type in the Book's Title");
+            InitializeComponent();
+            EBook temp = new EBook();
+            SqlDataReader dr = temp.FindOneEBook(intEBook_ID);
+            
+            while (dr.Read())
+            {
+                txtTitle.Text = dr["Title"].ToString();
+                txtAuthorFirstName.Text = dr["AuthorFirst"].ToString();
+                txtAuthorLastName.Text = dr["AuthorLast"].ToString();
+                txtAuthorEmail.Text = dr["Email"].ToString();
+                txtPages.Text = dr["Pages"].ToString();
+                txtBookmark.Text = dr["BookmarkPage"].ToString();
+                lblEBook_ID.Text = dr["EBook_ID"].ToString();
+
+                dptPubDate.Value = DateTime.Parse(dr["DatePublished"].ToString());
+                dtpRentalExpiration.Value = DateTime.Parse(dr["DateRentalExpires"].ToString());
+
+                lblEBook_ID.Text = dr["EBook_ID"].ToString();
+            }
         }
 
         private void addBook_Click(object sender, EventArgs e)

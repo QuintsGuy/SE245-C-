@@ -12,7 +12,7 @@ namespace Form_Demo
         {
             bool blnResult = false;
 
-            string[] strBadWords = { "fuck", "shit", "crap", "bitch" };
+            string[] strBadWords = { "poop", "homework", "caca" };
 
             foreach (string strBW in strBadWords)
                 if (temp.ToLower().Contains(strBW))
