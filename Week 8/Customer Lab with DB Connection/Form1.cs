@@ -42,10 +42,16 @@ namespace Customer_Lab
             {
                 lblFeedback.Text = temp.FName + " " + temp.MName + " "+ temp.LName + "\n" 
                                    + temp.Street1 + ", " + temp.Street2 + ", " + temp.City + 
-                                   ", " + temp.State + " " + temp.ZipCode + "\n" + temp.Phone + 
-                                   "\n" + temp.Email + "\n" + temp.CellPhone + "\n" + temp.InstagramURL
-                                   + "\n" + temp.CustomerSince + "\n" + temp.TotalPurchases + "\n" + 
-                                   temp.DiscountMember + "\n" + temp.RewardsEarned;
+                                   ", " + temp.State + " " + temp.ZipCode + "\n" + temp.Phone + "\n" + temp.Email + "\n" + temp.CellPhone + "\n" + temp.InstagramURL + "\n" + temp.CustomerSince + "\n" + temp.TotalPurchases + "\n" + temp.DiscountMember + "\n" + temp.RewardsEarned;
+            }
+            else
+            {
+                lblFeedback.Text = temp.Feedback;
+            }
+            
+            if (!temp.Feedback.Contains("ERROR: "))
+            {
+                lblFeedback.Text = temp.AddARecord();
             }
             else
             {
