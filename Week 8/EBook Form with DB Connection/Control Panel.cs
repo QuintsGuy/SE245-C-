@@ -26,5 +26,17 @@ namespace Form_Demo
             Form1 temp = new Form1();
             temp.Show();
         }
+
+        private void btnUpdateBooks_Click(object sender, EventArgs e)
+        {
+            Search_Books temp = new Search_Books();
+            temp.ShowDialog();
+        }
+
+        private void btnDeleteBooks_Click(object sender, EventArgs e)
+        {
+            Search_Books temp = new Search_Books();
+            temp.ShowDialog();
+        }
     }
 }

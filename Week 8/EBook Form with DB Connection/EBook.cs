@@ -8,10 +8,26 @@ namespace Form_Demo
 {
     public class EBook: Book
     {
+        private int eBook_ID;
         private DateTime dateRentalExpires;
         private int bookmarkPage;
         private bool member;
 
+        public Int32 EBook_ID
+        {
+            get { return eBook_ID; }
+            set
+            {
+                if (value >= 0)
+                {
+                    eBook_ID = value;
+                }
+                else
+                {
+                    feedback += "\nERROR: Sorry you entered an invalid EBook ID";
+                }
+            }
+        }
         public DateTime DateRentalExpires
         {
             get { return dateRentalExpires; }
@@ -27,7 +43,6 @@ namespace Form_Demo
                 }
             }
         }
-
         public int BookmarkPage
         {
             get { return bookmarkPage; }
@@ -43,7 +58,6 @@ namespace Form_Demo
                 }
             }
         }
-
         public bool Member
         {
             get { return member; }
@@ -163,6 +177,86 @@ namespace Form_Demo
             
             conn.Open();
             return comm.ExecuteReader();
+        }
+
+        public string updateRecord()
+        {
+            string strResult = "";
+            string strSQL =
+                "UPDATE EBooks Set Title = @Title, AuthorFirst = @AuthorFirst, AuthorLast = @AuthorLast, Email = @Email, Pages = @Pages, BookmarkPage = @BookmarkPage, DatePublished = @DatePublished, DateRentalExpires = @DateRentalExpires, Price = @Price WHERE EBook_ID = @EBook_ID";
+
+            SqlConnection conn = new SqlConnection();
+            
+            conn.ConnectionString = GetConnected();
+
+            SqlCommand comm = new SqlCommand();
+            comm.CommandText = strSQL;
+            comm.Connection = conn;
+            
+            comm.Parameters.AddWithValue("@EBook_ID", EBook_ID);
+            comm.Parameters.AddWithValue("@Title", Title);
+            comm.Parameters.AddWithValue("@AuthorFirst", AuthorFirstName);
+            comm.Parameters.AddWithValue("@AuthorLast", AuthorLastName);
+            comm.Parameters.AddWithValue("@Email", AuthorEmail);
+            comm.Parameters.AddWithValue("@Pages", Pages);
+            comm.Parameters.AddWithValue("@DatePublished", PubDate);
+            comm.Parameters.AddWithValue("@DateRentalExpires", DateRentalExpires);
+            comm.Parameters.AddWithValue("@BookmarkPage", BookmarkPage);
+            comm.Parameters.AddWithValue("@Price", Price);
+
+            try
+            {
+                conn.Open();
+                
+                int intRecord = comm.ExecuteNonQuery();
+                strResult = intRecord.ToString() + " Records Updated.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return strResult;
+        }
+
+        public string deleteEBook(int intEBook_ID)
+        {
+            Int32 intRecords = 0;
+            string strResult = "";
+
+            SqlConnection conn = new SqlConnection();
+            SqlCommand comm = new SqlCommand();
+
+            string strConn = GetConnected();
+
+            string sqlString = "DELETE FROM EBooks WHERE EBook_ID = @EBook_ID;";
+
+            conn.ConnectionString = strConn;
+            comm.Connection = conn;
+            comm.CommandText = sqlString;
+            comm.Parameters.AddWithValue("@EBook_ID", intEBook_ID);
+
+            try
+            {
+                conn.Open();
+
+                int intRec = comm.ExecuteNonQuery();
+                strResult = intRec.ToString() + " Records Deleted.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return strResult;
         }
         
         public EBook() : base()

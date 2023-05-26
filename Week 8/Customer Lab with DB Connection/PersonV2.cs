@@ -12,11 +12,7 @@ namespace Customer_Lab
             get { return _cellPhone; }
             set
             {
-                if (value == "")
-                {
-                    _cellPhone = value;
-                }
-                else if (Validations.IsADouble(value)==false)
+                if (Validations.IsADouble(value)==false)
                 {
                     Feedback += "\nERROR: Cellphone must only contain numbers";
                 }
@@ -35,11 +31,7 @@ namespace Customer_Lab
             get { return _instagramURL; }
             set
             {
-                if (value == "")
-                {
-                    _instagramURL = value;
-                }
-                else if (Validations.GotProfanity(value))
+                if (Validations.GotProfanity(value))
                 {
                     Feedback += "\nYour Instagram URL cannot contain profanity";
                 }

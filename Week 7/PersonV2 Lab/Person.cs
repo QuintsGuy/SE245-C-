@@ -45,6 +45,10 @@ namespace PersonV2_Lab
                 {
                     Feedback += "\nERROR: Your First Name input is too long";
                 }
+                else if (Validations.IsItFilledIn(value, 1) == false)
+                {
+                    Feedback += "\nERROR: Please insert first name";
+                }
                 else
                 {
                     _fname = value;
@@ -57,9 +61,13 @@ namespace PersonV2_Lab
             { return _mname; }
             set
             {
-                if (Validations.ExactLength(value, 1) == false)
+                if (Validations.NullorEmpty(value) == true)
                 {
-                    Feedback += "\nERROR: Middle Initial can only contain one character";
+                    _mname = value;
+                }
+                else if (Validations.GotProfanity(value))
+                {
+                    Feedback += "ERROR: Your name input contains profanity";
                 }
                 else
                 {
@@ -80,6 +88,10 @@ namespace PersonV2_Lab
                 else if (Validations.TooManyLetters(value, 15) == false)
                 {
                     Feedback += "\nERROR: Your Last Name input is too long";
+                }
+                else if (Validations.IsItFilledIn(value, 1) == false)
+                {
+                    Feedback += "\nERROR: Please insert last name";
                 }
                 else
                 {
@@ -117,7 +129,11 @@ namespace PersonV2_Lab
             { return _street2; }
             set
             {
-                if (Validations.GotProfanity(value))
+                if (Validations.NullorEmpty(value))
+                {
+                    _street2 = value;
+                }
+                else if (Validations.GotProfanity(value))
                 {
                     Feedback += "ERROR: Your Street2 input contains profanity";
                 }
@@ -197,7 +213,11 @@ namespace PersonV2_Lab
             { return _phone; }
             set
             {
-                if (Validations.ExactLength(value, 10) == false)
+                if (Validations.NullorEmpty(value) == true)
+                {
+                    _phone = value;
+                }
+                else if (Validations.ExactLength(value, 10) == false)
                 {
                     Feedback += "\nERROR: Phone number must only contain 10 digits";
                 }
@@ -221,13 +241,9 @@ namespace PersonV2_Lab
                 {
                     Feedback += "\nERROR: Your Email contains profanity";
                 }
-                else if (Validations.IsItFilledIn(value, 10) == false)
+                else if (Validations.ValidEmail(value) == false)
                 {
-                    Feedback += "\nERROR: Your email needs to be longer";
-                }
-                else if (Validations.TooManyLetters(value, 45) == false)
-                {
-                    Feedback += "\nERROR: Your Email is too long";
+                    Feedback += "\nERROR: Your email is invalid";
                 }
                 else
                 {

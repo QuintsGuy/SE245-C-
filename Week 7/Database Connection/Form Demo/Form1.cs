@@ -57,9 +57,7 @@ namespace Form_Demo
             }
 
             //*****************************************************************************************************************************************************
-            bool Member = chkMembership.Checked;
-            MessageBox.Show(Member.ToString());
-            
+            bool Member = chkMembership.Checked;            
             
             if (!temp.Feedback.Contains("ERROR: "))
             {

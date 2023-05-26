@@ -9,3 +9,5 @@ C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\We
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.exe
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.pdb
 C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.Form1.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.Control_Panel.resources
+C:\Users\Tristan Knott\OneDrive\Documents\New England Tech\Term 3\C#\SE245-C#\Week 7\PersonV2 Lab\obj\Debug\PersonV2_Lab.SearchMgr.resources

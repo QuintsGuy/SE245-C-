@@ -43,7 +43,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtMiddleInitial = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
             this.txtStreet1 = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtZipcode = new System.Windows.Forms.TextBox();
@@ -57,13 +57,16 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblFeedback = new System.Windows.Forms.Label();
+            this.lblPersonID = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(15, 15);
+            this.label1.Location = new System.Drawing.Point(15, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 23);
+            this.label1.Size = new System.Drawing.Size(185, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Personal Information Form";
             // 
@@ -82,7 +85,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Middle Initial: ";
+            this.label3.Text = "Middle Name: ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
@@ -182,12 +185,12 @@
             this.txtFirstName.Size = new System.Drawing.Size(267, 22);
             this.txtFirstName.TabIndex = 13;
             // 
-            // txtMiddleInitial
+            // txtMiddleName
             // 
-            this.txtMiddleInitial.Location = new System.Drawing.Point(130, 58);
-            this.txtMiddleInitial.Name = "txtMiddleInitial";
-            this.txtMiddleInitial.Size = new System.Drawing.Size(267, 22);
-            this.txtMiddleInitial.TabIndex = 14;
+            this.txtMiddleName.Location = new System.Drawing.Point(130, 58);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(267, 22);
+            this.txtMiddleName.TabIndex = 14;
             // 
             // txtStreet1
             // 
@@ -261,7 +264,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(57, 303);
+            this.btnSubmit.Location = new System.Drawing.Point(55, 297);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(118, 29);
             this.btnSubmit.TabIndex = 25;
@@ -271,7 +274,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(236, 303);
+            this.btnReset.Location = new System.Drawing.Point(234, 297);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(118, 29);
             this.btnReset.TabIndex = 26;
@@ -281,17 +284,49 @@
             // 
             // lblFeedback
             // 
-            this.lblFeedback.Location = new System.Drawing.Point(18, 342);
+            this.lblFeedback.Location = new System.Drawing.Point(18, 374);
             this.lblFeedback.Name = "lblFeedback";
-            this.lblFeedback.Size = new System.Drawing.Size(378, 245);
+            this.lblFeedback.Size = new System.Drawing.Size(378, 213);
             this.lblFeedback.TabIndex = 27;
             this.lblFeedback.Text = "Feedback";
+            // 
+            // lblPersonID
+            // 
+            this.lblPersonID.Location = new System.Drawing.Point(308, 11);
+            this.lblPersonID.Name = "lblPersonID";
+            this.lblPersonID.Size = new System.Drawing.Size(89, 23);
+            this.lblPersonID.TabIndex = 28;
+            this.lblPersonID.Text = "Person ID";
+            this.lblPersonID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(234, 332);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(118, 29);
+            this.btnDelete.TabIndex = 30;
+            this.btnDelete.Text = "Delete Record";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(55, 332);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(118, 29);
+            this.btnUpdate.TabIndex = 29;
+            this.btnUpdate.Text = "Update Record";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 597);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSubmit);
@@ -305,7 +340,7 @@
             this.Controls.Add(this.txtStreet2);
             this.Controls.Add(this.txtStreet1);
             this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.txtMiddleInitial);
+            this.Controls.Add(this.txtMiddleName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -326,6 +361,11 @@
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+
+        private System.Windows.Forms.Label lblPersonID;
+
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -337,7 +377,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtMiddleInitial;
+        private System.Windows.Forms.TextBox txtMiddleName;
         private System.Windows.Forms.TextBox txtStreet1;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtZipcode;

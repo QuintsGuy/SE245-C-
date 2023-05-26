@@ -47,11 +47,7 @@
             { return _mname; }
             set
             {
-                if (value == "")
-                {
-                    _mname = value;
-                }
-                else if (Validations.ExactLength(value, 1) == false)
+                if (Validations.ExactLength(value, 1) == false)
                 {
                     Feedback += "\nERROR: Middle Initial can only contain one character";
                 }
@@ -111,11 +107,7 @@
             { return _street2; }
             set
             {
-                if (value == "")
-                {
-                    _street2 = value;
-                }
-                else if (Validations.GotProfanity(value))
+                if (Validations.GotProfanity(value))
                 {
                     Feedback += "ERROR: Your Street2 input contains profanity";
                 }
@@ -195,11 +187,7 @@
             { return _phone; }
             set
             {
-                if (value == "")
-                {
-                    _phone = value;
-                }
-                else if (Validations.ExactLength(value, 10) == false)
+                if (Validations.ExactLength(value, 10) == false)
                 {
                     Feedback += "\nERROR: Phone number must only contain 10 digits";
                 }
@@ -233,7 +221,7 @@
                 }
                 else
                 {
-                    _email = value;
+                    _fname = value;
                 }
             }
         }

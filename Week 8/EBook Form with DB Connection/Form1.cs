@@ -16,6 +16,12 @@ namespace Form_Demo
         public Form1()
         {
             InitializeComponent();
+
+            btnDelete.Visible = false;
+            btnDelete.Enabled = false;
+
+            btnUpdate.Visible = false;
+            btnUpdate.Enabled = false;
         }
 
         /// <summary>
@@ -25,6 +31,10 @@ namespace Form_Demo
         public Form1(int intEBook_ID)
         {
             InitializeComponent();
+
+            addBook.Visible = false;
+            addBook.Enabled = false;
+            
             EBook temp = new EBook();
             SqlDataReader dr = temp.FindOneEBook(intEBook_ID);
             
@@ -34,6 +44,7 @@ namespace Form_Demo
                 txtAuthorFirstName.Text = dr["AuthorFirst"].ToString();
                 txtAuthorLastName.Text = dr["AuthorLast"].ToString();
                 txtAuthorEmail.Text = dr["Email"].ToString();
+                txtPrice.Text = dr["Price"].ToString();
                 txtPages.Text = dr["Pages"].ToString();
                 txtBookmark.Text = dr["BookmarkPage"].ToString();
                 lblEBook_ID.Text = dr["EBook_ID"].ToString();
@@ -51,7 +62,7 @@ namespace Form_Demo
             EBook temp = new EBook();
             
             //*****************************************************************************************************************************************************
-            //Fiil in book
+            //Fill in book
 
             temp.Title = txtTitle.Text;
             temp.AuthorFirstName = txtAuthorFirstName.Text;
@@ -80,10 +91,7 @@ namespace Form_Demo
             }
 
             //*****************************************************************************************************************************************************
-            bool Member = chkMembership.Checked;
-            MessageBox.Show(Member.ToString());
-            
-            
+
             if (!temp.Feedback.Contains("ERROR: "))
             {
                 lblFeedback.Text = temp.AddARecord();
@@ -114,6 +122,39 @@ namespace Form_Demo
             dtpRentalExpiration.Value = DateTime.Now.AddDays(14);
         }
         
-        
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            EBook temp = new EBook();
+
+            temp.EBook_ID = Convert.ToInt32(lblEBook_ID.Text);
+            temp.Title = txtTitle.Text;
+            temp.AuthorFirstName = txtAuthorFirstName.Text;
+            temp.AuthorLastName = txtAuthorLastName.Text;
+            temp.AuthorEmail = txtAuthorEmail.Text;
+            temp.Pages = Int32.Parse(txtPages.Text);
+            temp.BookmarkPage = Int32.Parse(txtBookmark.Text);
+            temp.Price = Double.Parse(txtPrice.Text);
+            temp.PubDate = dptPubDate.Value;
+            temp.DateRentalExpires = dtpRentalExpiration.Value;
+            temp.Member = chkMembership.Checked;
+
+            if (!temp.Feedback.Contains("ERROR:"))
+            {
+                lblFeedback.Text += temp.updateRecord();
+            }
+            else
+            {
+                lblFeedback.Text = temp.Feedback;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Int32 intEBook_ID = Convert.ToInt32(lblEBook_ID.Text);
+
+            EBook temp = new EBook();
+
+            lblFeedback.Text = temp.deleteEBook(intEBook_ID);
+        }
     }
 }
